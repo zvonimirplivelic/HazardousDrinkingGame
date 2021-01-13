@@ -1,4 +1,13 @@
 package com.zvonimirplivelic.hazardousdrinkinggame
 
-class HazardousDrinkingGameApplication {
+import android.app.Application
+import timber.log.Timber
+
+
+class HazardousDrinkingGameApplication : Application() {
+    override fun onCreate() {
+        super.onCreate()
+
+        Timber.plant(Timber.DebugTree())
+    }
 }

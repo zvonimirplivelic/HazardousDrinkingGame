@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HazardousDrinkingGame</string>
+    <string name="btn_roll_text">ROLL</string>
 </resources>
