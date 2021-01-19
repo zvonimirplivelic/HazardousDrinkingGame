@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">HazardousDrinkingGame</string>
     <string name="btn_roll_text">ROLL</string>
+    <string name="warning">Warning</string>
+    <string name="safety">Safety Disclaimer</string>
+    <string name="ready">Are you ready to play?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
