@@ -1,4 +1,4 @@
-package com.zvonimirplivelic.hazardousdrinkinggame.ui.main
+package com.zvonimirplivelic.hazardousdrinkinggame.ui.game
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,16 +8,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import androidx.navigation.findNavController
 import com.zvonimirplivelic.hazardousdrinkinggame.R
 
 class GameFragment : Fragment() {
 
     private lateinit var ivFirstDice: ImageView
     private lateinit var ivSecondDice: ImageView
-
-    companion object {
-        fun newInstance() = GameFragment()
-    }
 
     private lateinit var viewModel: GameViewModel
 
@@ -35,6 +32,11 @@ class GameFragment : Fragment() {
 
         val btnRollDice: Button = view.findViewById(R.id.btnRollDices)
         btnRollDice.setOnClickListener { rollDices() }
+
+        val infoBtn: ImageView = view.findViewById(R.id.ibInfo)
+        infoBtn.setOnClickListener { view: View ->
+            view.findNavController().navigate(R.id.gameToInfo)
+        }
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {

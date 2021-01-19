@@ -1,4 +1,4 @@
-package com.zvonimirplivelic.hazardousdrinkinggame.ui.main
+package com.zvonimirplivelic.hazardousdrinkinggame.ui.game
 
 import androidx.lifecycle.ViewModel
 
